@@ -1,0 +1,88 @@
+body {
+    background-color: #ecf0f3;
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    height: 35px;
+    bottom: 0;
+    width: 100%;
+    color: #e5e5e5;
+    align-items: center;
+    background-color: #0a3871;
+
+    > .footer-bar {
+        display: flex;
+        line-height: 0px;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        margin-left: 20px;
+
+        > .year {
+            align-content: center;
+        }
+
+        > a {
+            color: #e5e5e5;
+        }
+
+        > a:link {
+            text-decoration: none;
+        }
+    }
+}
+
+.year {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.socialmedia {
+    display: flex;
+    position: fixed;
+    bottom: auto;
+    right: 30px;
+    margin: auto;
+    gap: 10px;
+
+    > a {
+        color: #c9c9d4;
+    }
+
+    > a:hover {
+        transform: scale(2); /* rotate(-10deg); */
+
+        > .fa-envelope:hover {
+            color: rgb(255, 166, 0);
+        }
+
+        > .fa-twitter {
+            color: #188cd8;
+        }
+
+        .fa-github {
+            color: #141b28;
+            background-image: radial-gradient(
+                white 62%,
+                #0a3871 5%,
+                #0a3871 5%
+            );
+        }
+
+        .fa-linkedin {
+            color: #0b65c2;
+            background-image: radial-gradient(
+                circle,
+                white 63%,
+                #0a3871 1%,
+                #0a3871 1%
+            );
+        }
+    }
+}
